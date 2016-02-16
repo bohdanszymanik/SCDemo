@@ -1,6 +1,6 @@
 # FSharp demo for a Software craftsmanship group
-Devs demo
-Cover topics like...
+
+C# dev focussed session to cover topics like...
 
 1. Syntax – concise, convenient and correct
   * Pattern matching
