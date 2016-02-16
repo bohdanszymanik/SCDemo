@@ -1,6 +1,7 @@
 # FSharp demo for a Software craftsmanship group
 Devs demo
-Cover topics like:
+Cover topics like...
+
 1. Syntax – concise, convenient and correct
   * Pattern matching
   * Option types
