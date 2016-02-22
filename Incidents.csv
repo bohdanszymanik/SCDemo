@@ -1,0 +1,6 @@
+﻿Incident Number,Subject,Status,Priority,Component / Sub-Product,Reporter,Created On,Updated On
+868 / 2016,SAP Asynch Posting Error after implementation note 2259713,In Processing by SAP,Medium,Proxies,P J (S00836),01.02.2016 04:56:13,18.02.2016 17:22:02
+876 / 2016,ProcessingResultCode in notification and confirmation messag,Customer Action,Medium,Proxies,P J (S00124),25.01.2016 23:02:15,18.02.2016 09:59:30
+0792 / 2015,SAP Note: 0002151406 implemented selection screen missing,Customer Action,Medium,Payment Engine,B M (S0123),22.10.2015 23:27:33,17.02.2016 14:28:37
+2864 / 2015,Reference Account info not available in synchronous service,Sent to SAP,Medium,Proxies,P J (S0016),30.11.2015 03:17:27,17.02.2016 09:06:33
+726 / 2016,Automatic reconciliation between SAP PE and BaS failed,Customer Action,Medium,Payment Engine,C M (S028),19.01.2016 02:41:14,16.02.2016 16:19:34

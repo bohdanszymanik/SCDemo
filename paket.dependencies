@@ -1,0 +1,11 @@
+source https://nuget.org/api/v2
+
+nuget FsUnit
+nuget NUnit
+nuget NUnit.Runners
+nuget FsCheck
+nuget FSharp.Data
+nuget Fuchu
+nuget Deedle
+nuget FSharp.Charting
+nuget Suave
