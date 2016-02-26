@@ -1,13 +1,17 @@
 ﻿open System
 
+
 // assignment and type inference
 let a = 1
+
 
 // what's the diff between a value and a function... nothing
 let addOne = fun x -> x + 1
 
+
 // make value explicit
 let addOne' x = x + 1
+
 
 // composition
 1 |> addOne
@@ -17,7 +21,8 @@ let addTwo = fun x -> x + 2
 
 1 |> (addOne >> addTwo)
 
-// custom operators
+
+// custom infix operators
 let (>|>) x f = 
     let timer = new System.Diagnostics.Stopwatch()
     timer.Start()
@@ -32,6 +37,11 @@ let (>|>) x f =
 >|> List.averageBy float
 
 
+// mutable values - most commonly used in accessing OO classes eg .net framework and performance optimisations
+let mutable m = 1
+m <- 2
+
+
     
 // lists, sequences, arrays, computation expressions and higher order functions
 let aList = [1..100]
@@ -42,6 +52,7 @@ let aSeq'' = aList |> List.map (fun x -> x * x) |> Seq.ofList
 let anArray = [|0..10..100|]
 let anArray' = [|for i in 1..100 -> i * i|]
 
+
 // pattern matching and indents
 let nickNamer name =
     match name with
@@ -49,11 +60,11 @@ let nickNamer name =
     | "David" -> "Dave"
     | _ -> name
 
+
 // nice learner example here https://cockneycoder.wordpress.com/2016/02/16/working-with-running-totals-in-f/
 let score = function | "win" -> 2 | "draw" -> 1 | _ -> 0
 score "win"
 ["win"; "draw"; "loss"; "win"; "bye"] |> List.map score
-
 
 // let's get a running total score for game outcomes
 ["win"; "draw"; "loss"; "win"; "bye"] |> List.map score |> List.scan (+) 0
@@ -73,6 +84,7 @@ type Score =
 | Deuce
 | Advantage of Player
 | Game of Player
+
 
 ////////////////////////////////////////////
 // testing
@@ -150,11 +162,11 @@ run simpleTest;;
 open FSharp.Data
 
 type SAPIncidentsProvider = CsvProvider<"incidents.csv">
-let incidents = SAPIncidentsProvider.Load("incidents.csv")
+let incidents = SAPIncidentsProvider.Load(__SOURCE_DIRECTORY__ + "\incidents.csv")
 
 let firstRow = incidents.Rows |> Seq.head
 firstRow.``Incident Number``
-
+firstRow.
 
 // etc etc
 
